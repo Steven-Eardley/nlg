@@ -254,40 +254,50 @@
             <fs>
                 <feat attr="index">
                 <lf>
-                <nomvar name="X"/>
+                <nomvar name="E"/>
                 </lf>
                 </feat>
                 <feat attr="singular" val="no"/>
             </fs>
             </atomcat>
-            <slash dir="\"/> 
+            <slash dir="\"/>
+            <atomcat type="NP">
+                <fs id="1">
+                    <feat attr="index">
+                    <lf>
+                    <nomvar name="X"/>
+                    </lf>
+                    </feat>
+                </fs>
+            </atomcat>
+            <slash dir="\"/>
             <complexcat>
                 <atomcat type="S">
                 <fs>
                     <feat attr="index">
                     <lf>
-                    <nomvar name="E"/>
+                    <nomvar name="E1"/>
                     </lf>
                     </feat>
                 </fs>
                 </atomcat>
-                    <slash dir="\"/>
-                    <atomcat type="NP">
-                <fs>
-                    <feat attr="index">
-                    <lf>
-                    <nomvar name="X"/>
-                    </lf>
-                    </feat>
-                </fs>
+                <slash dir="\"/>
+                <atomcat type="NP">
+                    <fs id="1">
+                        <feat attr="index">
+                        <lf>
+                        <nomvar name="X1"/>
+                        </lf>
+                        </feat>
+                    </fs>
                 </atomcat>
                 <lf>
-                <satop nomvar="E">
+                <satop nomvar="E1">
                     <prop name="[*DEFAULT*]"/>
                 </satop>
-                <satop nomvar="E">
+                <satop nomvar="E1">
                     <diamond mode="ARG1">
-                    <nomvar name="X"/>
+                    <nomvar name="X1"/>
                     </diamond>
                 </satop>    
                 </lf>
@@ -298,47 +308,49 @@
                 <fs>
                     <feat attr="index">
                     <lf>
-                    <nomvar name="E"/>
+                    <nomvar name="E2"/>
                     </lf>
                     </feat>
                 </fs>
                 </atomcat>
                 <slash dir="\"/>
                 <atomcat type="NP">
-                <fs>
+                <fs id="1">
                     <feat attr="index">
                     <lf>
-                    <nomvar name="X"/>
+                    <nomvar name="X2"/>
                     </lf>
                     </feat>
                 </fs>
                 </atomcat>
                     <lf>
-                    <satop nomvar="E">
+                    <satop nomvar="E2">
                         <prop name="[*DEFAULT*]"/>
                     </satop>
-                    <satop nomvar="E">
+                    <satop nomvar="E2">
                         <diamond mode="ARG1">
-                        <nomvar name="X"/>
+                        <nomvar name="X2"/>
                         </diamond>
                     </satop>    
                     </lf>
             </complexcat>
             <lf>
-            <satop nomvar="X">
+            <satop nomvar="E">
                 <prop name="[*DEFAULT*]"/>
             </satop>
-            <satop nomvar="X1">
-                <prop name="[*DEFAULT*]"/>
+            <satop nomvar="E">
+                <diamond mode="ARG1">
+                <nomvar name="X"/>
+                </diamond>
             </satop>
-            <satop nomvar="X">
+            <satop nomvar="E">
                 <diamond mode="CONJ">
-                <nomvar name="Y"/>
+                <nomvar name="E1"/>
                 </diamond>
             </satop>    
-            <satop nomvar="X">
+            <satop nomvar="E">
                 <diamond mode="CONJ">
-                <nomvar name="Z"/>
+                <nomvar name="E2"/>
                 </diamond>
             </satop>  
             </lf>
