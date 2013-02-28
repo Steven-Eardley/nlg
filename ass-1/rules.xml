@@ -25,9 +25,7 @@
     </result>
   </typechanging>
 
-  <!-- copy and edit this rule for question 5 -->
-
-  <typechanging name="adjective">
+  <typechanging name="adj-gradable">
     <arg>
       <atomcat type="A">
         <fs>
@@ -36,6 +34,7 @@
               <nomvar name="P"/>
             </lf>
           </feat>
+          <feat attr="gradable" val="yes"/>
         </fs>
       </atomcat>
     </arg>
@@ -64,6 +63,45 @@
       </complexcat>
     </result>
   </typechanging>
+
+  <typechanging name="adj-non-gradable">
+    <arg>
+      <atomcat type="A">
+        <fs>
+          <feat attr="index">
+            <lf>
+              <nomvar name="P"/>
+            </lf>
+          </feat>
+          <feat attr="gradable" val="no"/>
+        </fs>
+      </atomcat>
+    </arg>
+    <result>
+      <complexcat>
+    <atomcat type="N">
+      <fs id="1">
+        <feat attr="index">
+          <lf>
+        <nomvar name="X"/>
+          </lf>
+        </feat>
+      </fs>
+    </atomcat>
+        <slash dir="/"/>
+    <atomcat type="N">
+      <fs id="1"/>
+    </atomcat>
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="MOD">
+          <nomvar name="P"/>
+        </diamond>
+      </satop>    
+    </lf>
+      </complexcat>
+    </result>
+  </typechanging>
   
   <typechanging name="adverb">
     <arg>
@@ -86,7 +124,7 @@
         <nomvar name="X"/>
           </lf>
         </feat>
-        <feat attr="gradeable" val="yes"/>
+        <feat attr="gradable" val="yes"/>
       </fs>
     </atomcat>
         <slash dir="/"/>

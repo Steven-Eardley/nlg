@@ -17,22 +17,22 @@
   <entry word="decor" pos="common-noun" macros="@non-singular"/>
 
   <!-- nationality adjectives -->
-  <entry word="Italian" pos="adjective" macros="@non-gradeable"/>
-  <entry word="Indian" pos="adjective" macros="@non-gradeable"/>
-  <entry word="Chinese" pos="adjective" macros="@non-gradeable"/>
-  <entry word="Thai" pos="adjective" macros="@non-gradeable"/>
-  <entry word="Turkish" pos="adjective" macros="@non-gradeable"/>
+  <entry word="Italian" pos="adjective" macros="@non-gradable"/>
+  <entry word="Indian" pos="adjective" macros="@non-gradable"/>
+  <entry word="Chinese" pos="adjective" macros="@non-gradable"/>
+  <entry word="Thai" pos="adjective" macros="@non-gradable"/>
+  <entry word="Turkish" pos="adjective" macros="@non-gradable"/>
 
   <!-- gradable adjectives -->
-  <entry word="cheap" pos="adjective" macros="@gradeable"/>
-  <entry word="expensive" pos="adjective" macros="@gradeable"/>
-  <entry word="inexpensive" pos="adjective" stem="cheap" macros="@gradeable"/>
-  <entry word="funky" pos="adjective" macros="@gradeable"/>
-  <entry word="groovy" pos="adjective" macros="@gradeable"/>
-  <entry word="loud" pos="adjective" macros="@gradeable"/>
-  <entry word="great" pos="adjective" macros="@gradeable"/>
-  <entry word="good" pos="adjective" macros="@gradeable"/>
-  <entry word="bad" pos="adjective" macros="@gradeable"/>
+  <entry word="cheap" pos="adjective" macros="@gradable"/>
+  <entry word="expensive" pos="adjective" macros="@gradable"/>
+  <entry word="inexpensive" pos="adjective" stem="cheap" macros="@gradable"/>
+  <entry word="funky" pos="adjective" macros="@gradable"/>
+  <entry word="groovy" pos="adjective" macros="@gradable"/>
+  <entry word="loud" pos="adjective" macros="@gradable"/>
+  <entry word="great" pos="adjective" macros="@gradable"/>
+  <entry word="good" pos="adjective" macros="@gradable"/>
+  <entry word="bad" pos="adjective" macros="@gradable"/>
 
   <!-- verbs -->
   <entry word="rock" pos="intransitive-verb" macros="@non-singular"/>
@@ -60,11 +60,11 @@
     <fs id="1" attr="singular" val="no"/>
   </macro>
   
-  <macro name="@gradeable">
-    <fs id="1" attr="gradeable" val="yes"/>
+  <macro name="@gradable">
+    <fs id="1" attr="gradable" val="yes"/>
   </macro>
-  <macro name="@non-gradeable">
-    <fs id="1" attr="gradeable" val="no"/>
+  <macro name="@non-gradable">
+    <fs id="1" attr="gradable" val="no"/>
   </macro>
   
 </morph>
