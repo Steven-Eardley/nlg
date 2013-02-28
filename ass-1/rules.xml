@@ -64,5 +64,44 @@
       </complexcat>
     </result>
   </typechanging>
+  
+  <typechanging name="adverb">
+    <arg>
+      <atomcat type="ADV">
+        <fs>
+          <feat attr="index">
+            <lf>
+              <nomvar name="P"/>
+            </lf>
+          </feat>
+        </fs>
+      </atomcat>
+    </arg>
+    <result>
+      <complexcat>
+    <atomcat type="A">
+      <fs id="1">
+        <feat attr="index">
+          <lf>
+        <nomvar name="X"/>
+          </lf>
+        </feat>
+        <feat attr="gradeable" val="yes"/>
+      </fs>
+    </atomcat>
+        <slash dir="/"/>
+    <atomcat type="A">
+      <fs id="1"/>
+    </atomcat>
+    <lf>
+      <satop nomvar="X">
+        <diamond mode="MOD">
+          <nomvar name="P"/>
+        </diamond>
+      </satop>    
+    </lf>
+      </complexcat>
+    </result>
+  </typechanging>
 
 </rules>
