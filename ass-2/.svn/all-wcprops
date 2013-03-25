@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 27
+/svn/!svn/ver/8/trunk/ass-2
+END
+generate-texts-win.bat
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/7/trunk/ass-2/generate-texts-win.bat
+END
+generate-texts
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/5/trunk/ass-2/generate-texts
+END
+parameters.xml
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/5/trunk/ass-2/parameters.xml
+END
+list.qrys
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/5/trunk/ass-2/list.qrys
+END
+google.csh
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/8/trunk/ass-2/google.csh
+END

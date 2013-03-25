@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <lf>
+    <node pred="be-verb" id="id0" mood="dcl">
+      <rel name="arg1">
+        <node pred="Ti_Amo" id="id1" />
+      </rel>
+      <rel name="arg2">
+        <node pred="restaurant" id="id2" det="indef-det">
+          <rel name="mod">
+            <node pred="mediocre" id="id3" />
+          </rel>
+          <rel name="mod">
+            <node pred="italian" id="id4" />
+          </rel>
+          <rel name="relclause">
+            <node pred="have-verb" id="id5">
+              <rel name="arg1">
+                <node idref="id2" />
+              </rel>
+              <rel name="arg2">
+                <node pred="decor" id="id6">
+                  <rel name="mod">
+                    <node pred="tacky" id="id7" />
+                  </rel>
+                </node>
+              </rel>
+            </node>
+          </rel>
+        </node>
+      </rel>
+    </node>
+    <node pred="be-verb" id="id8">
+      <rel name="arg1">
+        <node pred="Giovanni's" id="id9" />
+      </rel>
+      <rel name="arg2">
+        <node pred="restaurant" id="id10" det="indef-det">
+          <rel name="mod">
+            <node pred="good" id="id11" />
+          </rel>
+          <rel name="mod">
+            <node pred="italian" id="id12" />
+          </rel>
+          <rel name="relclause">
+            <node pred="have-verb" id="id13">
+              <rel name="arg1">
+                <node idref="id10" />
+              </rel>
+              <rel name="arg2">
+                <node pred="decor" id="id14">
+                  <rel name="mod">
+                    <node pred="plain" id="id15" />
+                  </rel>
+                </node>
+              </rel>
+            </node>
+          </rel>
+        </node>
+      </rel>
+    </node>
+  </lf>
+</xml>
+

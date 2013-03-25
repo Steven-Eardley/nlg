@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/5/trunk/ass-2/jars
+END
+match-generation.jar
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/5/trunk/ass-2/jars/match-generation.jar
+END
+jdom.jar
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/5/trunk/ass-2/jars/jdom.jar
+END
+openccg.jar
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/5/trunk/ass-2/jars/openccg.jar
+END
+trove.jar
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/5/trunk/ass-2/jars/trove.jar
+END

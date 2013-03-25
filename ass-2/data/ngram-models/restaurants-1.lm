@@ -1,0 +1,200 @@
+
+\data\
+ngram 1=35
+ngram 2=66
+ngram 3=86
+
+\1-grams:
+-1.461398	</s>
+-99	<s>	-1.873002
+-99	<unk>
+-0.9907594	Amo	-2.388566
+-1.11029	Giovanni's	-2.269555
+-1.609461	Giovanni's,	-1.802107
+-1.451853	Italian	-1.952861
+-0.9907594	Ti	-2.379715
+-1.813581	While	-1.565987
+-2.813581	a	-0.8025602
+-1.471158	and	-1.863351
+-1.471158	are	-1.933769
+-1.813581	but	-1.577716
+-1.859339	decor	-1.556024
+-2.114611	decor,	-1.287151
+-1.322219	decor.	-1.969518
+-1.859339	food	-1.556024
+-2.114611	food,	-1.287151
+-1.33646	food.	-1.99837
+-1.461398	good	-1.984309
+-1.910491	hand,	-1.454669
+-1.160368	has	-2.226569
+-1.910491	however,	-1.454669
+-2.813581	is	-0.6983024
+-1.461398	mediocre	-1.974021
+-1.910491	on	-1.513144
+-1.910491	other	-1.513144
+-1.461398	plain	-1.937852
+-2.813581	restaurant,	-0.6983024
+-1.471158	restaurants.	-1.895099
+-1.170128	serves	-2.216862
+-1.461398	tacky	-1.927933
+-1.910491	the	-1.513144
+-2.813581	which	-0.6678616
+-1.910491	while	-1.483446
+
+\2-grams:
+-0.3058289	<s> Giovanni's	-1.547114
+-0.3058289	<s> Ti	0.7637534
+-0.7830586	Amo and	-1.357035
+-0.7830586	Amo are	0.2961774
+-0.4820286	Amo has	-1.650753
+-2.097453	Amo is	0
+-0.4820286	Amo serves	-1.650807
+-0.6640434	Giovanni's and	-1.357035
+-0.6640434	Giovanni's are	0.2961774
+-0.559308	Giovanni's has	-1.457238
+-1.978437	Giovanni's is	0
+-0.559308	Giovanni's serves	-1.457292
+-0.3077634	Giovanni's, however,	0
+-0.3077634	Giovanni's, on	0
+-1.366423	Italian restaurant,	0
+-0.02400028	Italian restaurants.	0
+-0.001629625	Ti Amo	0.05890179
+-0.01072387	While Ti	0.8137275
+-0.3699113	a good	-0.6886675
+-0.3699113	a mediocre	-0.6886675
+-0.3059373	and Giovanni's	-1.547114
+-0.3059373	and Ti	0.7732987
+-0.004907335	are Italian	-0.6798769
+-0.01072387	but Giovanni's	-1.264329
+-0.2671717	decor but	0.2905645
+-0.3640817	decor while	0.288065
+-0.0211893	decor, Giovanni's	-1.182041
+-0.4341522	decor. </s>
+-2.09691	decor. Giovanni's
+-0.59176	decor. Giovanni's,	0.2944005
+-0.552842	decor. Ti	0.8702089
+-1.09691	decor. While	0.5713911
+-0.2671717	food but	0.2905645
+-0.3640817	food while	0.288065
+-0.0211893	food, Giovanni's	-1.182041
+-0.4393327	food. </s>
+-0.5776354	food. Giovanni's,	0.2944005
+-0.5513064	food. Ti	0.8824433
+-1.082785	food. While	0.5713911
+-1.629983	good Italian	-0.6798771
+-0.01455872	good food.	-1.385119
+-0.314394	hand, has	-0.9318118
+-0.314394	hand, serves	-0.9318657
+-0.3034361	has plain	0
+-0.3034361	has tacky	0
+-0.314394	however, has	-0.9318118
+-0.314394	however, serves	-0.9318657
+-0.09691001	is a	-0.120574
+-1.629983	mediocre Italian	-0.6798771
+-0.4027389	mediocre food	0
+-0.6580114	mediocre food,	0
+-0.4538914	mediocre food.	-1.385119
+-0.01336396	on the	0
+-0.01336396	other hand,	0
+-0.004798883	plain decor.	-1.39361
+-0.09691001	restaurant, which	0
+-0.1168811	restaurants. Ti	0.5876622
+-0.64836	restaurants. While	0.2905645
+-0.3034906	serves good	-0.4674698
+-0.3034906	serves mediocre	-0.4674698
+-0.4027389	tacky decor	0
+-0.6580114	tacky decor,	0
+-0.4275625	tacky decor.	-1.102022
+-0.01336396	the other	0
+-0.09691001	which has	1.303435
+-0.01336396	while Giovanni's	-1.170059
+
+\3-grams:
+-0.7862996	Ti Amo and
+-0.7862996	Ti Amo are
+-0.4852696	Ti Amo has
+-1.827692	Ti Amo is
+-0.4852696	Ti Amo serves
+-0.009759837	<s> Giovanni's and
+-0.009759837	and Giovanni's are
+-0.3117539	but Giovanni's has
+-0.3117539	but Giovanni's serves
+-0.0211893	decor, Giovanni's has
+-0.0211893	food, Giovanni's serves
+-0.314394	while Giovanni's has
+-0.314394	while Giovanni's serves
+-0.314394	decor. Giovanni's, however,
+-0.314394	decor. Giovanni's, on
+-0.314394	food. Giovanni's, however,
+-0.314394	food. Giovanni's, on
+-0.004907335	are Italian restaurants.
+-0.09691001	good Italian restaurant,
+-0.09691001	mediocre Italian restaurant,
+-0.009545318	<s> Ti Amo
+-0.01072387	While Ti Amo
+-0.009759837	and Ti Amo
+-0.01223446	decor. Ti Amo
+-0.01258913	food. Ti Amo
+-0.006340178	restaurants. Ti Amo
+-0.04139268	decor. While Ti
+-0.04139268	food. While Ti
+-0.0211893	restaurants. While Ti
+-0.3521825	is a good
+-0.3521825	is a mediocre
+-0.009759837	Amo and Giovanni's
+-0.009759837	Giovanni's and Ti
+-0.009759837	Amo are Italian
+-0.009759837	Giovanni's are Italian
+-0.0211893	decor but Giovanni's
+-0.0211893	food but Giovanni's
+-0.2671717	tacky decor but
+-0.3640817	tacky decor while
+-0.0211893	tacky decor, Giovanni's
+-0.3058289	plain decor. </s>
+-0.4149733	plain decor. Ti
+-0.9590414	plain decor. While
+-0.02632894	tacky decor. Giovanni's,
+-0.2671717	mediocre food but
+-0.3640817	mediocre food while
+-0.0211893	mediocre food, Giovanni's
+-0.3059373	good food. </s>
+-0.4179111	good food. Ti
+-0.94939	good food. While
+-0.01336396	mediocre food. Giovanni's,
+-0.09691001	a good Italian
+-0.004907335	serves good food.
+-0.314394	other hand, has
+-0.314394	other hand, serves
+-0.004907335	Amo has tacky
+-0.007686829	Giovanni's has plain
+-0.02632894	hand, has plain
+-0.02632894	however, has plain
+-0.3521825	which has plain
+-0.3521825	which has tacky
+-0.314394	Giovanni's, however, has
+-0.314394	Giovanni's, however, serves
+-0.09691001	Amo is a
+-0.09691001	Giovanni's is a
+-0.09691001	a mediocre Italian
+-0.3930875	serves mediocre food
+-0.64836	serves mediocre food,
+-0.44424	serves mediocre food.
+-0.01336396	Giovanni's, on the
+-0.01336396	the other hand,
+-0.004798883	has plain decor.
+-0.09691001	Italian restaurant, which
+-0.1168811	Italian restaurants. Ti
+-0.64836	Italian restaurants. While
+-0.004907335	Amo serves mediocre
+-0.007686829	Giovanni's serves good
+-0.02632894	hand, serves good
+-0.02632894	however, serves good
+-0.4027389	has tacky decor
+-0.6580114	has tacky decor,
+-0.4275625	has tacky decor.
+-0.01336396	on the other
+-0.09691001	restaurant, which has
+-0.02632894	decor while Giovanni's
+-0.02632894	food while Giovanni's
+
+\end\

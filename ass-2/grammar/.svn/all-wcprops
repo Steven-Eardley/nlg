@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/!svn/ver/5/trunk/ass-2/grammar
+END
+lexicon.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/5/trunk/ass-2/grammar/lexicon.xml
+END
+morph.xml
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/5/trunk/ass-2/grammar/morph.xml
+END
+convert-to-graph.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/5/trunk/ass-2/grammar/convert-to-graph.xsl
+END
+grammar.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/5/trunk/ass-2/grammar/grammar.xml
+END
+rules.xml
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/5/trunk/ass-2/grammar/rules.xml
+END
+convert-to-hlds.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/5/trunk/ass-2/grammar/convert-to-hlds.xsl
+END

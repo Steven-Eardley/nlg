@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <lf>
+    <node pred="be-verb" id="id0" mood="dcl">
+      <rel name="arg1">
+        <node pred="and" id="id1">
+          <rel name="conj">
+            <node pred="Giovanni's" id="id2" />
+          </rel>
+          <rel name="conj">
+            <node pred="Ti_Amo" id="id3" />
+          </rel>
+        </node>
+      </rel>
+      <rel name="arg2">
+        <node pred="restaurant" id="id4">
+          <rel name="mod">
+            <node pred="italian" id="id5" />
+          </rel>
+        </node>
+      </rel>
+    </node>
+    <node pred="contrast-rel" id="id6">
+      <rel name="arg1">
+        <node pred="serve-verb" id="id7">
+          <rel name="arg1">
+            <node pred="Giovanni's" id="id8" />
+          </rel>
+          <rel name="arg2">
+            <node pred="food" id="id9">
+              <rel name="mod">
+                <node pred="good" id="id10" />
+              </rel>
+            </node>
+          </rel>
+        </node>
+      </rel>
+      <rel name="arg2">
+        <node pred="serve-verb" id="id11">
+          <rel name="arg1">
+            <node pred="Ti_Amo" id="id12" />
+          </rel>
+          <rel name="arg2">
+            <node pred="food" id="id13">
+              <rel name="mod">
+                <node pred="mediocre" id="id14" />
+              </rel>
+            </node>
+          </rel>
+        </node>
+      </rel>
+    </node>
+    <node pred="contrast-rel" id="id15">
+      <rel name="arg1">
+        <node pred="have-verb" id="id16">
+          <rel name="arg1">
+            <node pred="Giovanni's" id="id17" />
+          </rel>
+          <rel name="arg2">
+            <node pred="decor" id="id18">
+              <rel name="mod">
+                <node pred="plain" id="id19" />
+              </rel>
+            </node>
+          </rel>
+        </node>
+      </rel>
+      <rel name="arg2">
+        <node pred="have-verb" id="id20">
+          <rel name="arg1">
+            <node pred="Ti_Amo" id="id21" />
+          </rel>
+          <rel name="arg2">
+            <node pred="decor" id="id22">
+              <rel name="mod">
+                <node pred="tacky" id="id23" />
+              </rel>
+            </node>
+          </rel>
+        </node>
+      </rel>
+    </node>
+  </lf>
+</xml>
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<relation type="contrast">
+  <relation type="infer">
+    <proposition type="nucleus" quality="decor" description="tacky">
+      <subjects>
+        <subject name="Ti_Amo" />
+      </subjects>
+    </proposition>
+    <proposition type="nucleus" quality="food" description="mediocre">
+      <subjects>
+        <subject name="Ti_Amo" />
+      </subjects>
+    </proposition>
+    <proposition type="nucleus" quality="restaurant" description="italian">
+      <subjects>
+        <subject name="Ti_Amo" />
+      </subjects>
+    </proposition>
+  </relation>
+  <relation type="infer">
+    <proposition type="nucleus" quality="decor" description="plain">
+      <subjects>
+        <subject name="Giovanni's" />
+      </subjects>
+    </proposition>
+    <proposition type="nucleus" quality="food" description="good">
+      <subjects>
+        <subject name="Giovanni's" />
+      </subjects>
+    </proposition>
+    <proposition type="nucleus" quality="restaurant" description="italian">
+      <subjects>
+        <subject name="Giovanni's" />
+      </subjects>
+    </proposition>
+  </relation>
+</relation>
+

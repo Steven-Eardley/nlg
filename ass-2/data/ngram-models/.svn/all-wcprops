@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/6/trunk/ass-2/data/ngram-models
+END
+wsj.lm
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/5/trunk/ass-2/data/ngram-models/wsj.lm
+END
+ngram-count
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/6/trunk/ass-2/data/ngram-models/ngram-count
+END
