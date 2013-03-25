@@ -10,10 +10,10 @@
 The content plan contains the information that there should be three comparisons between the subjects, along with the corresponding items; the text plans 'flesh out' these structures, with different presentations of the information. The first interleaves the sets of properties, switching subjects. The second groups the properties for each subject, while the third swaps the subjects around: Giovanni's first, Ti Ammo second.
 
 \section{Question 1.2}
-No, the rankings do not appear correct. The model tends to prefer shorter sentences, meaning those in simple language which to me sound stilted are promoted to the top of the list. In addition, the top ranked sentence has a problem with adjective order: it says \emph[Italian mediocre] rather than the preferred \emph[mediocre Italian]. Finally, the top ranked sentences don't contain as much information as later ones. Only decor is mentioned, not food. This may be due to the model being used out of domain - a newswire trained model will have been trained on texts in which brevity is valued, whereas here we wish to be more discriptive.
+No, the rankings do not appear correct. The model tends to prefer shorter sentences, meaning those in simple language which to me sound stilted are promoted to the top of the list. In addition, the top ranked sentence has a problem with adjective order: it says \emph[Italian mediocre] rather than the preferred \emph[mediocre Italian]. Finally, in the top ranked sentences only decor is mentioned, not quality of food, so these sentences don't contain as much information as later ones. These shortcomings may be due to the model being used out of domain - a newswire trained model will have been trained on texts in which brevity is valued, whereas here we wish to be more discriptive.
 
 \section{Question 1.3}
-Yes, there is some improvement. The sentences at the top of the list with incorrect adjective order have gone, only one instance exists far down the list. Another behaviour I attempted to discourage by removal from the corpus was the use of the same comparison phrase repeatedly - it didn't read very well when 'on the other hand' is used twice, for example:
+Yes, there is some improvement. The sentences at the top of the list with incorrect adjective order have gone, only one instance exists far down the list, plus all sentences contain information on food as well as decor.  Another behaviour I attempted to discourage by removal from the corpus was the use of the same comparison phrase repeatedly - it didn't read very well when 'on the other hand' is used twice, for example:
     
     Giovanni's and Ti Amo are Italian restaurants. Ti Amo serves mediocre food. Giovanni's, on the other hand, serves good food. Ti Amo has tacky decor. Giovanni's, on the other hand, has plain decor.
 
@@ -22,7 +22,27 @@ Using the second language model did not affect this, however - there were still 
 It is also clear that the shorter sentences are still preferred, at the cost of some sentence fluency.
 
 \section{Question 1.4}
-The web corpus trained language model does provide an improvement over the WSJ language model, but the problem of repetition is still present. This problem and the issue with preferring shorter strings are unlikely to go away, as stated earlier. Interestingly, when this corpus is used in 50/50 conjunction with the WSJ corpus, the top sentences actually lose information - only decor is mentioned, not food. For this reason it seems the restaurants-2 language model is less useful than the restaurants-1 one.
+The web corpus trained language model does not provide an improvement over the WSJ language model, and the problem of repetition is still present. This problem and the issue with preferring shorter strings are unlikely to go away, as stated earlier. Interestingly, when this corpus is used in 50/50, 20/80 or 80/20 conjunction with the WSJ corpus, the results are the same as using the WSJ alone, with the same problem with missing information - only decor is mentioned, not food. For this reason it seems the restaurants-2 language model is less useful than the restaurants-1 one.
 
+Using only the web sourced model causes
+
+Using the two restaurant corpora together produce 
+
+\section{Question 1.5}
+
+\section{Question 1.6}
+
+\section{Quesion 1.7}
+The probablilities for longer sentences are diminished because the overall sentence production probability is a product of the n-gram frequency probabilities. Since all probabilities are always less than one, the overall probability will always decrease with length as more words are added and their probablities multiplied on. A solution to this is to apply a weight vector to counteract this effect: giving larger weights for each word added. This should be designed to counteract the loss of probability and not to give a preference for vastly long sentences.
+
+\section{Quesion 1.8}
+
+\section{Quesion 2.1}
+
+\section{Quesion 2.2}
+
+\section{Quesion 2.3}
+
+\section{Quesion 2.4}
 
 \end{document}
