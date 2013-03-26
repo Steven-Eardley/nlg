@@ -85,6 +85,7 @@ The probablilities for longer sentences are diminished because the overall sente
 These phrases show the adjective ordering phenomenon as mentioned (many times) above. It shows those I have termed undesirable are found to have lower counts from Google. Using these frequencies, the results could be re-ranked according to how often the contained word orderings are used on the Web. One would find an improvement over the current systems in such a case.
 
 \section{Quesion 2.1}
+\verb+nuc+ = nucleus \verb+sat+ = satelite
 
 Text 1:
 “Smalltown” and “Pandas” are the best shows for you. “Smalltown” opens soon, while “Pandas” opens later, and “Smalltown and “Pandas” are from very strong companies. “Smalltown is a teen drama while “Pandas” is a comedy-thriller.
@@ -93,22 +94,42 @@ Items:
         Smalltown, Pandas
 
 Relations:
-        
+        conjunction ( nuc: 1, nuc: 2 ), elaboration ( nuc: 1, sat: 3 ), elaboration ( nuc: 2, sat: 6 ),
+        contrast ( nuc: 3, nuc: 6 ), elaboration ( nuc: 1, sat: 4 ), elaboration ( nuc: 2, sat: 7 ),
+        elaboration ( nuc: 1, sat: 5 ), elaboration ( nuc: 2, sat: 8 ), contrast ( nuc: 5, nuc: 8 )
         
 Content:
-        1. assert ( reccomendations ( Smalltown, Pandas ) )
-        2. assert ( has-attribute ( Smalltown, opens ( soon ) ) )
-        3. assert ( has-attribute ( Smalltown, company ( strong ) ) )
-        4. assert ( has-attribute ( Smalltown, type ( teen-drama ) ) )
-        5. assert ( has-attribute ( Pandas, opens ( later ) ) )
-        6. assert ( has-attribute ( Pandas, company ( strong ) ) )
-        7. assert ( has-attribute ( Pandas, type ( comedy-thriller ) ) )
+        1. assert ( reccomendation ( Smalltown )
+        2. assert ( reccomendation ( Pandas )
+        3. assert ( has-attribute ( Smalltown, opens ( soon ) ) )
+        4. assert ( has-attribute ( Smalltown, company ( strong ) ) )
+        5. assert ( has-attribute ( Smalltown, type ( teen-drama ) ) )
+        6. assert ( has-attribute ( Pandas, opens ( later ) ) )
+        7. assert ( has-attribute ( Pandas, company ( strong ) ) )
+        8. assert ( has-attribute ( Pandas, type ( comedy-thriller ) ) )
 \end{verbatim}
 
 Text 2:
 
 “Smalltown” and Pandas” are the best shows for you. “Smalltown”, which is a teen drama, opens soon, and is from a strong company. “Pandas”, which is a comedy-thriller, is from a strong company, and opens later.
 \begin{verbatim}
+Items:
+        Smalltown, Pandas
+
+Relations:
+        conjunction ( nuc: 1, nuc: 2 ), elaboration ( nuc: 1, sat: 5 ), elaboration ( nuc: 1, sat: 3 ),
+        elaboration ( nuc: 1, sat: 4 ), elaboration ( nuc: 2, sat: 8 ), elaboration ( nuc: 1, sat: 7 ),
+        elaboration ( nuc: 2, sat: 6 ), contrast ( nuc: 1, nuc: 2 )
+        
+Content:
+        1. assert ( reccomendation ( Smalltown )
+        2. assert ( reccomendation ( Pandas )
+        3. assert ( has-attribute ( Smalltown, opens ( soon ) ) )
+        4. assert ( has-attribute ( Smalltown, company ( strong ) ) )
+        5. assert ( has-attribute ( Smalltown, type ( teen-drama ) ) )
+        6. assert ( has-attribute ( Pandas, opens ( later ) ) )
+        7. assert ( has-attribute ( Pandas, company ( strong ) ) )
+        8. assert ( has-attribute ( Pandas, type ( comedy-thriller ) ) )
 
 \end{verbatim}
 
@@ -133,5 +154,7 @@ Within a real-time system a user (say, someone with limited mobility) may requir
 MATCH's questionnaire method to assign weights (asking 'what would be the first thing you change'?') would be a good method for choosing weights for the attributes. It may also be possible for a more direct approach which lets the user have full control - presenting an interactive list where the user can move their preference to the top. An alternative and automatic method may be for the program to guess the weights and predict the outcome for a set of possible choices, then adjust the model weights according to the chosen option. This rather depends if the user is willing to put up with a few poor choices while the system is experimenting.
 
 \section{Quesion 2.4}
+If a user asks the system "Show me Italian restaurants I haven't visited this month" it would be beneficial for an application to only show a filtered set of results based on the user's history. A system without any user information would always recommend the same items for each query. Also in the example above, our less-mobile user may prefer to only see results within a shorter distance, and walking directions from the standard application may be difficult to follow.
 
+Allignment preferences may be 
 \end{document}
