@@ -86,12 +86,28 @@ These phrases show the adjective ordering phenomenon as mentioned (many times) a
 
 \section{Quesion 2.1}
 
-For text 1:
+Text 1:
+“Smalltown” and “Pandas” are the best shows for you. “Smalltown” opens soon, while “Pandas” opens later, and “Smalltown and “Pandas” are from very strong companies. “Smalltown is a teen drama while “Pandas” is a comedy-thriller.
 \begin{verbatim}
+Items:
+        Smalltown, Pandas
 
+Relations:
+        
+        
+Content:
+        1. assert ( reccomendations ( Smalltown, Pandas ) )
+        2. assert ( has-attribute ( Smalltown, opens ( soon ) ) )
+        3. assert ( has-attribute ( Smalltown, company ( strong ) ) )
+        4. assert ( has-attribute ( Smalltown, type ( teen-drama ) ) )
+        5. assert ( has-attribute ( Pandas, opens ( later ) ) )
+        6. assert ( has-attribute ( Pandas, company ( strong ) ) )
+        7. assert ( has-attribute ( Pandas, type ( comedy-thriller ) ) )
 \end{verbatim}
 
-For text 2:
+Text 2:
+
+“Smalltown” and Pandas” are the best shows for you. “Smalltown”, which is a teen drama, opens soon, and is from a strong company. “Pandas”, which is a comedy-thriller, is from a strong company, and opens later.
 \begin{verbatim}
 
 \end{verbatim}
@@ -115,7 +131,6 @@ My attribute list, in order of importance:
 Within a real-time system a user (say, someone with limited mobility) may require a different weighting to these preferences. In such a case, proximity to the user and time may feature highly compared to ticket price or the critic score, in order to assure that they can reach it in time. Perhaps a socialite may place having their Facebook friends going to the same show at the top of the list, or even give it a 50\% ranking with the critic score (after all, they'll want to go to the \emph{good} things their friends are at) and discard the remaining options.
 
 MATCH's questionnaire method to assign weights (asking 'what would be the first thing you change'?') would be a good method for choosing weights for the attributes. It may also be possible for a more direct approach which lets the user have full control - presenting an interactive list where the user can move their preference to the top. An alternative and automatic method may be for the program to guess the weights and predict the outcome for a set of possible choices, then adjust the model weights according to the chosen option. This rather depends if the user is willing to put up with a few poor choices while the system is experimenting.
-
 
 \section{Quesion 2.4}
 
