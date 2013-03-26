@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<relation type="justify">
+  <proposition type="nucleus" quality="overall_value_among_the_selected_restaurants" description="best">
+    <subjects>
+      <subject name="Giovanni's" />
+    </subjects>
+  </proposition>
+  <relation type="infer">
+    <proposition type="satellite" quality="decor" description="plain">
+      <subjects>
+        <subject name="Giovanni's" />
+      </subjects>
+    </proposition>
+    <proposition type="satellite" quality="food" description="good">
+      <subjects>
+        <subject name="Giovanni's" />
+      </subjects>
+    </proposition>
+    <proposition type="satellite" quality="restaurant" description="italian">
+      <subjects>
+        <subject name="Giovanni's" />
+      </subjects>
+    </proposition>
+    <proposition type="satellite" quality="restaurant" description="cheap">
+      <subjects>
+        <subject name="Giovanni's" />
+      </subjects>
+    </proposition>
+    <proposition type="satellite" quality="service" description="friendly">
+      <subjects>
+        <subject name="Giovanni's" />
+      </subjects>
+    </proposition>
+  </relation>
+</relation>
+

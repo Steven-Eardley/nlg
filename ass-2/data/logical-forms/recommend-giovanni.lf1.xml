@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <lf>
+    <node pred="have-verb" id="id0" mood="dcl">
+      <rel name="arg1">
+        <node pred="Giovanni's" id="id1" />
+      </rel>
+      <rel name="arg2">
+        <node pred="overall_value_among_the_selected_restaurants" id="id2" det="def-det">
+          <rel name="mod">
+            <node pred="best" id="id3" />
+          </rel>
+        </node>
+      </rel>
+    </node>
+    <node pred="be-verb" id="id4">
+      <rel name="arg1">
+        <node pred="pronoun" id="id5" singular="yes" />
+      </rel>
+      <rel name="arg2">
+        <node pred="restaurant" id="id6" det="indef-det">
+          <rel name="mod">
+            <node pred="good" id="id7" />
+          </rel>
+          <rel name="mod">
+            <node pred="italian" id="id8" />
+          </rel>
+          <rel name="mod">
+            <node pred="cheap" id="id9" />
+          </rel>
+          <rel name="relclause">
+            <node pred="have-verb" id="id10">
+              <rel name="arg1">
+                <node idref="id6" />
+              </rel>
+              <rel name="arg2">
+                <node pred="and" id="id11">
+                  <rel name="conj">
+                    <node pred="decor" id="id12">
+                      <rel name="mod">
+                        <node pred="plain" id="id13" />
+                      </rel>
+                    </node>
+                  </rel>
+                  <rel name="conj">
+                    <node pred="service" id="id14">
+                      <rel name="mod">
+                        <node pred="friendly" id="id15" />
+                      </rel>
+                    </node>
+                  </rel>
+                </node>
+              </rel>
+            </node>
+          </rel>
+        </node>
+      </rel>
+    </node>
+  </lf>
+</xml>
+

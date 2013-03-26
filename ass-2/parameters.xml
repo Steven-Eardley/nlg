@@ -1,12 +1,12 @@
 <parameters>
   <content-plans>
-    <content-plan file="compare-giovanni-ti_amo.xml"/>
+    <content-plan file="recommend-giovanni.xml"/>
   </content-plans>
 
   <ngram-models>
-    <!--<model file="wsj.lm" weight="100"/>-->
-    <model file="wsj.lm" weight="80"/>
-    <model file="restaurants-1.lm" weight="20"/>
+    <model file="wsj.lm" weight="33"/>
+    <model file="restaurants-1.lm" weight="34"/>
+    <model file="restaurants-3.lm" weight="33"/>
   </ngram-models>
 
 </parameters>
