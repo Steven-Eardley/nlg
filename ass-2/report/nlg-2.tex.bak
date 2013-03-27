@@ -10,7 +10,7 @@
 The content plan contains the information that there should be three comparisons between the subjects, along with the corresponding items; the text plans 'flesh out' these outlines, with different presentations of the information. The first interleaves the sets of properties, switching subjects. The second groups the properties for each subject, while the third swaps the subjects around: Giovanni's first, Ti Ammo second. The text plan adds a structure to the content plan's definition of what should be contained in the text, but they all contain the same basic information, since they are based on the same content plan.
 
 \section{Question 1.2}
-No, the rankings do not appear correct. The model tends to prefer shorter sentences, meaning those in simple language which to me sound stilted are promoted to the top of the list. In addition, the top ranked sentence has a problem with adjective order: it says \emph[Italian mediocre] rather than the preferred \emph[mediocre Italian]. Finally, in the top ranked sentences only decor is mentioned, not quality of food, so these sentences don't contain as much information as later ones. These shortcomings may be due to the model being used out of domain - a news-wire trained model will have been trained on texts in which brevity is valued, whereas here we wish to be more descriptive.
+No, the rankings do not appear correct. The model tends to prefer shorter sentences, meaning those in simple language which to me sound stilted are promoted to the top of the list. In addition, the top ranked sentence has a problem with adjective order: it says \emph[Italian mediocre] rather than the preferred \emph[mediocre Italian]. Finally, in the top ranked sentences only decor is mentioned, not quality of food, so these sentences don't contain as much information as later ones. These shortcomings may be due to the model being used out of domain - a newswire trained model will have been trained on texts in which brevity is valued, whereas here we wish to be more discriptive.
 
 The top ranked sentence is:
 \begin{verbatim}
@@ -59,7 +59,7 @@ This is quite good because it keeps the subjects in the same order each time - i
 
 \section{Question 1.6}
 
-Each language model was tested individually, then with different combinations, followed by different weights:
+Each language modeal was tested individually, then with different combinations, followed by different weights:
     
 \begin{tabular}{ | c | c | c | c | }
   \hline                        
@@ -78,14 +78,14 @@ Each language model was tested individually, then with different combinations, f
 
 The results were all very similar. Using the WSJ LM alone once again led to adjectives being incorrectly ordered near the top (although not the top ranked one). Using the \verb+restaurant-3+ language model did improve on this. The \verb+restaurant-1+ model in this case failed to produce ranks - each sentence was given 0. This is perhaps because it is too specific to the first task: producing comparison strings. Pairing it 50/50 with the WSJ gave the worst output, with errors in the top result. All other blends, on the other hand, produced equivalent results with acceptable outcomes. 
 
-\section{Question 1.7}
-The probabilities for longer sentences are diminished because the overall sentence production probability is a product of the n-gram frequency probabilities. Since all probabilities are always less than one, the overall probability will always decrease with length as more words are added and their probabilities multiplied on. A solution to this is to apply a weight vector to counteract this effect: giving larger weights for each word added. This should be designed to counteract the loss of probability and not to give a preference for vastly long sentences.
+\section{Quesion 1.7}
+The probablilities for longer sentences are diminished because the overall sentence production probability is a product of the n-gram frequency probabilities. Since all probabilities are always less than one, the overall probability will always decrease with length as more words are added and their probablities multiplied on. A solution to this is to apply a weight vector to counteract this effect: giving larger weights for each word added. This should be designed to counteract the loss of probability and not to give a preference for vastly long sentences.
 
-\section{Question 1.8}
+\section{Quesion 1.8}
 These phrases show the adjective ordering phenomenon as mentioned (many times) above. It shows those I have termed undesirable are found to have lower counts from Google. Using these frequencies, the results could be re-ranked according to how often the contained word orderings are used on the Web. For example, for a set of adjective permutations each could be searched with Google, and the results counts stored. Each sentence in which the permutation exists can be multiplied by a weight: the frequency divided by the sum of frequencies across all orderings. One would likely find an improvement over the current systems in such a case.
 
-\section{Question 2.1}
-\verb+nuc+ = nucleus \verb+sat+ = satellite
+\section{Quesion 2.1}
+\verb+nuc+ = nucleus \verb+sat+ = satelite
 
 Text 1:
 “Smalltown” and “Pandas” are the best shows for you. “Smalltown” opens soon, while “Pandas” opens later, and “Smalltown and “Pandas” are from very strong companies. “Smalltown is a teen drama while “Pandas” is a comedy-thriller.
@@ -99,8 +99,8 @@ Relations:
         elaboration ( nuc: 1, sat: 5 ), elaboration ( nuc: 2, sat: 8 ), contrast ( nuc: 5, nuc: 8 )
         
 Content:
-        1. assert ( recommendation ( Smalltown )
-        2. assert ( recommendation ( Pandas )
+        1. assert ( reccomendation ( Smalltown )
+        2. assert ( reccomendation ( Pandas )
         3. assert ( has-attribute ( Smalltown, opens ( soon ) ) )
         4. assert ( has-attribute ( Smalltown, company ( strong ) ) )
         5. assert ( has-attribute ( Smalltown, type ( teen-drama ) ) )
@@ -122,8 +122,8 @@ Relations:
         elaboration ( nuc: 2, sat: 6 ), contrast ( nuc: 1, nuc: 2 )
         
 Content:
-        1. assert ( recommendation ( Smalltown )
-        2. assert ( recommendation ( Pandas )
+        1. assert ( reccomendation ( Smalltown )
+        2. assert ( reccomendation ( Pandas )
         3. assert ( has-attribute ( Smalltown, opens ( soon ) ) )
         4. assert ( has-attribute ( Smalltown, company ( strong ) ) )
         5. assert ( has-attribute ( Smalltown, type ( teen-drama ) ) )
@@ -135,10 +135,10 @@ Content:
 
 The first text may be preferred because it does a better job of grouping the shared information, namely that they are 'from a strong company'. The following section also better serves as a justification of the assertion that those two shows are the best, rather than simply describing the shows individually.
 
-\section{Question 2.2}
+\section{Quesion 2.2}
 User X seems to prefer short sentences with little information in each, while user Y enjoys long sentences and commas to separate topics. To satisfy them both, don't go to either extreme, rather generate sentences of medium length with only one or two topics and commas.
 
-\section{Question 2.3}
+\section{Quesion 2.3}
 My attribute list, in order of importance:
 \begin{enumerate}
 \item Genre
@@ -153,8 +153,8 @@ Within a real-time system a user (say, someone with limited mobility) may requir
 
 MATCH's questionnaire method to assign weights (asking 'what would be the first thing you change'?') would be a good method for choosing weights for the attributes. It may also be possible for a more direct approach which lets the user have full control - presenting an interactive list where the user can move their preference to the top. An alternative and automatic method may be for the program to guess the weights and predict the outcome for a set of possible choices, then adjust the model weights according to the chosen option. This rather depends if the user is willing to put up with a few poor choices while the system is experimenting. This system would be improved by adding user ratings once the recommendation has been visited.
 
-\section{Question 2.4}
+\section{Quesion 2.4}
 If a user asks the system "Show me Italian restaurants I haven't visited this month" it would be beneficial for an application to only show a filtered set of results based on the user's history. A system without any user information would always recommend the same items for each query. Also in the example above, our less-mobile user may prefer to only see results within a shorter distance, and walking directions from the standard application may be difficult to follow.
 
-A useful form of user alignment may is the detail used in text - some people may prefer lots of information and detailed assessment, whereas others may prefer a snappy soundbite to make up their mind. Checking how often a user uses a 'show more' button would allow a system to present shorter or longer reviews to the user. A non-aligned system would retain the same format for each review.
+A useful form of user allignment may is the detail used in text - some people may prefer lots of information and detailed assessment, whereas others may prefer a snappy soundbite to make up their mind. Checking how often a user uses a 'show more' button would allow a system to present shorter or longer reviews to the user. A non-alligned system would retain the same format for each review.
 \end{document}
